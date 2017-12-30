@@ -6,13 +6,54 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.practice.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:id="@+id/Title"
+        android:layout_width="368dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="243dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4169E1"
+            android:fontFamily="sans-serif"
+            android:text="Number Games"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="216dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="399dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Game Start"
+            android:textAlignment="center" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
